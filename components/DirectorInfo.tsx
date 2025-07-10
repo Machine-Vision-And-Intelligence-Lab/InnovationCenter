@@ -1,6 +1,8 @@
 import React from 'react';
 import Image from "next/image";
 import director2 from "@/assets/director 2.png"
+import OrangeUnderline from "@/assets/OrangeUnderline";
+
 
 const DirectorInfo = () => {
     return (
@@ -8,7 +10,7 @@ const DirectorInfo = () => {
            <div className="ml-3 tracking-wider mr-1">
            <div  className="flex  gap-1.5 mr-2.5" >
            <h1 className="md:mt-3.5 sm:text-3xl  ml-3 sm:mt-4 text-2xl mt-4 mb-4 text-[#363131]" >Director&apos;s Corner</h1>
-           <div  className="text-2xl  mt-9.5  sm:mt-9.5 w-3/12 h-1 sm:w-1/12 rounded-2xl bg-[#F46721]"  ></div>
+               <OrangeUnderline/>
             </div>
 
             <div className="ml-3 my-3  ">
