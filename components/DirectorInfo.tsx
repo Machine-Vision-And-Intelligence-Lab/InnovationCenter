@@ -1,16 +1,14 @@
 import React from 'react';
 import Image from "next/image";
 import director2 from "@/assets/director 2.png"
-import OrangeUnderline from "@/assets/OrangeUnderline";
+import Heading from "@/components/Heading";
 
 const DirectorInfo = () => {
     return (
         <>
-           <div className="ml-3 tracking-wider mr-1">
-           <div  className="flex  gap-1.5 mr-2.5" >
-           <h1 className="md:mt-3.5 sm:text-3xl  ml-3 sm:mt-4 text-2xl mt-4 mb-4 text-[#363131]" >Director&apos;s Corner</h1>
-               <OrangeUnderline/>
-            </div>
+           <div className="ml-2 tracking-wider mr-1">
+
+            <Heading>Director&apos;s Corner</Heading>
 
             <div className="ml-3 my-3  ">
                 <div className="md:flex  md:gap-8 align-middle lg:gap-10">
