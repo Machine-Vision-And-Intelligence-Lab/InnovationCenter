@@ -1,5 +1,5 @@
 import React, {PropsWithChildren} from 'react';
-import OrangeUnderline from "@/assets/OrangeUnderline";
+import OrangeUnderline from "@/components/OrangeUnderline";
 
 const Heading = ({children}:PropsWithChildren) => {
     return (

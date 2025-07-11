@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from "next/image";
-import director2 from "@/assets/director 2.png"
+import director2 from "@/public/assets/director 2.png"
 import Heading from "@/components/Heading";
 
 const DirectorInfo = () => {

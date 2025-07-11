@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from "next/image";
-import Cardimage from "@/assets/cardimage.png";
+import Cardimage from "@/public/assets/cardimage.png";
 const Card = () => {
     return (
 
