@@ -10,7 +10,7 @@ const DirectorInfo = () => {
 
             <Heading>Director&apos;s Corner</Heading>
 
-            <div className="ml-3 my-3  ">
+            <div className="ml-3 mb-3 my-1">
                 <div className="md:flex  md:gap-8 align-middle lg:gap-10">
                 <Image src={director2} alt="director's image" className="h-auto basis-1/4 sm:mt-0 object-cover rounded-xl sm:p-0 lg:py-4 lg:mb-3 pr-3 mb-7 md:mb-0  "   />
 
