@@ -1,7 +1,16 @@
+import DirectorInfo from "@/components/DirectorInfo";
+import Heading from "@/components/Heading";
+import Hero from "@/components/Hero";
+
 export default function Home() {
   return (
-    <div className="min-h-screen flex items-center justify-center">
-      <h1 className="font-bold text-7xl">Home Page</h1>
-    </div>
+
+        <div className="container-fluid page ">
+        <Hero/>
+        <DirectorInfo/>
+        <div className="ml-2"><Heading>Our Schemes</Heading></div>
+        </div>
+
+
   );
 }
