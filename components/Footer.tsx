@@ -22,21 +22,21 @@ const Footer: React.FC = () => {
         </div>
 
         <div className="col-span-2 lg:col-span-3 lg:flex lg:items-end">
-          <form className="w-full">
+          <form className="w-full ">
             <label htmlFor="UserEmail" className="sr-only"> Email </label>
 
             <div
-              className="border border-gray-100 p-2 focus-within:ring-3 sm:flex sm:items-center sm:gap-4"
+              className="border rounded-2xl border-gray-100 p-2  sm:flex sm:items-center sm:gap-4"
             >
               <input
                 type="email"
                 id="UserEmail"
                 placeholder="john@doe.com"
-                className="w-full border-none focus:border-transparent focus:ring-transparent sm:text-sm"
+                className="w-full text-sm text-gray-400 border-none px-4 py-1 h-8 rounded-2xl focus:border-transparent focus:ring-transparent sm:text-xl"
               />
 
               <button
-                className="mt-1 w-full bg-primary-500 px-6 py-3 text-sm font-bold tracking-wide text-white uppercase transition-none hover:bg-primary-600 sm:mt-0 sm:w-auto sm:shrink-0"
+                className="mt-1 w-full rounded-2xl bg-primary-500 px-6 py-3 text-sm font-bold tracking-wide text-white uppercase transition-none hover:bg-primary-600 sm:mt-0 sm:w-auto sm:shrink-0"
               >
                 Sign Up
               </button>
