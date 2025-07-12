@@ -114,7 +114,7 @@ const NewsEventsCarousel = () => {
 
             <div
                 ref={containerRef}
-                className="relative h-80 overflow-hidden cursor-grab select-none"
+                className="relative h-80 overflow-hidden  select-none"
                 onTouchStart={onTouchStart}
                 onTouchMove={onTouchMove}
                 onTouchEnd={onTouchEnd}

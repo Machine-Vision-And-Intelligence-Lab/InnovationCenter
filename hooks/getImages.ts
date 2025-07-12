@@ -3,12 +3,7 @@ import Image from "@/interfaces/Image";
 let Images :  Image[] = [];
 
 Images = [
-    {
-        id: 1,
-        src: 'https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=800&h=400&fit=crop',
-        alt: 'Mountain landscape with lake',
-        title: 'Beautiful Mountain View'
-    },
+
     {
         id: 2,
         src: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=400&fit=crop',
