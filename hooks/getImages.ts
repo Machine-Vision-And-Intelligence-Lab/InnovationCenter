@@ -1,6 +1,6 @@
-import Image from "@/interfaces/Image";
+import DisplayImage from "@/interfaces/DisplayImage";
 
-let Images :  Image[] = [];
+let Images :  DisplayImage[] = [];
 
 Images = [
 

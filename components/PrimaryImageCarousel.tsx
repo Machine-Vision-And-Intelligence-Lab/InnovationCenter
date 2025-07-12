@@ -2,12 +2,12 @@
 
 import { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
-import Image from "@/interfaces/Image";
+import DisplayImage from "@/interfaces/DisplayImage";
 import getImages from "@/hooks/getImages";
 
 const PrimaryImageCarousel = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
-     const [images, setImages] = useState<Image[]>([]);
+     const [images, setImages] = useState<DisplayImage[]>([]);
 
     useEffect(() => {
          const fetchedImages = getImages();
