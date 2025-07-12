@@ -105,9 +105,9 @@ const NewsEventsCarousel = () => {
     };
 
     return (
-        <div className="relative w-full h-full max-w-4xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
+        <div className="relative w-full h-[90%] sm:h-full max-w-4xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
 
-            <div className="bg-orange-500 text-white px-6 py-4">
+            <div className="bg-orange-500 text-white px-6 py-2">
                 <h2 className="text-2xl font-bold">News & Events</h2>
             </div>
 

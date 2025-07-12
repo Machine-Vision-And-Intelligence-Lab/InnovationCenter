@@ -32,7 +32,7 @@ const PrimaryImageCarousel = () => {
     };
 
     return (
-        <div className="relative w-full max-w-4xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
+        <div className="relative  md:h-full w-full max-w-4xl mx-auto  bg-transparent rounded-lg shadow-lg overflow-hidden">
 
             <div className=" h-full overflow-hidden">
                 <div
@@ -55,23 +55,23 @@ const PrimaryImageCarousel = () => {
                     ))}
                 </div>
 
+                <div className="absolute flex justify-between px-5 top-4/5 md:top-1/2 w-full ">
+                    <button
+                        onClick={goToPrevious}
+                        className="-translate-y-1/2  bg-white bg-opacity-80 hover:bg-opacity-100 rounded-full p-2 shadow-lg transition-all duration-200 "
+                        aria-label="Previous image"
+                    >
+                        <ChevronLeft className="w-6 h-6 text-gray-800 "/>
+                    </button>
 
-                <button
-                    onClick={goToPrevious}
-                    className="absolute left-4 top-1/2 -translate-y-1/2  bg-white bg-opacity-80 hover:bg-opacity-100 rounded-full p-2 shadow-lg transition-all duration-200 "
-                    aria-label="Previous image"
-                >
-                    <ChevronLeft className="w-6 h-6 text-gray-800 " />
-                </button>
-
-                <button
-                    onClick={goToNext}
-                    className="absolute right-4 top-1/2 -translate-y-1/2 bg-white bg-opacity-80 hover:bg-opacity-100 rounded-full p-2 shadow-lg transition-all duration-200 z-10"
-                    aria-label="Next image"
-                >
-                    <ChevronRight className=" h-6 text-gray-800 " />
-                </button>
-            </div>
+                    <button
+                        onClick={goToNext}
+                        className="-translate-y-1/2 bg-white bg-opacity-80 hover:bg-opacity-100 rounded-full p-2 shadow-lg transition-all duration-200 z-10"
+                        aria-label="Next image"
+                    >
+                        <ChevronRight className=" h-6 text-gray-800 "/>
+                    </button>
+                </div>            </div>
 
         </div>
     );
