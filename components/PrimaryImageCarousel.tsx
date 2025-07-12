@@ -2,43 +2,23 @@
 
 import { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import Image from "@/interfaces/Image";
+import getImages from "@/hooks/getImages";
 
 const PrimaryImageCarousel = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
+     const [images, setImages] = useState<Image[]>([]);
 
-    // todo: Replace with actual images
-    const images = [
-        {
-            id: 1,
-            src: 'https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=800&h=400&fit=crop',
-            alt: 'Mountain landscape with lake',
-            title: 'Beautiful Mountain View'
-        },
-        {
-            id: 2,
-            src: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=400&fit=crop',
-            alt: 'Sunset over ocean',
-            title: 'Ocean Sunset'
-        },
-        {
-            id: 3,
-            src: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&h=400&fit=crop',
-            alt: 'Forest pathway',
-            title: 'Forest Adventure'
-        },
-        {
-            id: 4,
-            src: 'https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800&h=400&fit=crop',
-            alt: 'Desert landscape',
-            title: 'Desert Exploration'
-        }
-    ];
+    useEffect(() => {
+         const fetchedImages = getImages();
+        setImages(fetchedImages);
+    }, []);
 
     // Auto-swipe functionality
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentSlide((prev) => (prev + 1) % images.length);
-        }, 4000); // todo: Change time (for no auto-swipe, set to very large number)
+        }, 7000);
 
         return () => clearInterval(interval);
     }, [images.length]);
@@ -53,8 +33,8 @@ const PrimaryImageCarousel = () => {
 
     return (
         <div className="relative w-full max-w-4xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
-            {/* Main image container */}
-            <div className="relative h-96 overflow-hidden">
+
+            <div className="relative h-full overflow-hidden">
                 <div
                     className="flex transition-transform duration-500 ease-in-out h-full"
                     style={{ transform: `translateX(-${currentSlide * 100}%)` }}
@@ -75,7 +55,7 @@ const PrimaryImageCarousel = () => {
                     ))}
                 </div>
 
-                {/* Navigation arrows */}
+
                 <button
                     onClick={goToPrevious}
                     className="absolute left-4 top-1/2 -translate-y-1/2 bg-white bg-opacity-80 hover:bg-opacity-100 rounded-full p-2 shadow-lg transition-all duration-200 z-10"
